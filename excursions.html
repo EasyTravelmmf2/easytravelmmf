@@ -1,0 +1,187 @@
+<!Doctype html>
+<html>
+<head>
+<title> Экскурсии </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+  body { margin: 0; }
+   #sidebar, #content0,#footer{ position: absolute; } 
+   #sidebar, #content0,#footer{ overflow: auto; padding: 10px; }
+   #sidebar { 
+    left:0%;
+    width: 30%; 
+    top: 15%; 
+    bottom: 10%; 
+   }
+   #content0 {
+    top: 15%; 
+    left: 30%; 
+    bottom: 10%; right: 0;
+   }
+    #footer {
+    top: 90%; 
+    left: 0%; 
+    bottom: 0%; right: 0;
+   }
+  </style>
+ </head>
+ <body>
+ <div style=" position:absolute; top:5%;right:5%; left:85%"><i><u>Выход</u></i></div>
+  <b><h1 align="center" style="color:#0B0B61">EASY TRAVEL</h1></b>
+ <table width="100%" height="5%""  border="1">
+<tr>
+<h2>
+<td><center><a href="gorod.html">Города</a></center></td>
+<td><center><a href="hotels.html">Отели</a></center></td>
+<td><center><a href="transport.html">Транспорт</a></center></td>
+<td><center>Экскурсии</center></td>
+</h2>
+</tr>
+</table>
+
+<div id="sidebar">
+  <center><h2 ><i> Страна</i></h2>
+<form>
+  <select>
+    <option value="u1">Беларусь</option>
+    <option value="u2">Россия</option>
+    <option value="u3">Великобритания</option>
+    <option value="u4">Германия</option>
+    <option value="u5">Польша</option>
+  </select>
+</form>
+</center>
+   <center><h2 ><i> Вид экскурсии</i></h2>
+<form>
+  <select>
+    <option value="u1">Обзорная</option>
+    <option value="u2">Тематическая</option>
+    <option value="u3">Литературная</option>
+    <option value="u4">Историческая</option>
+    <option value="u5">Неунылая</option>
+  </select>
+</form>
+</center>
+   <center><h2 ><i> Город</i></h2>
+<form>
+  <p><input name="city" placeholder="Город" size=13></p>
+</form>
+</center>
+<center>
+<p>
+<label for="Date"><h2><i>Дата<i><h2> </label> 
+</p>
+<p> 
+<input id="date" min="2016-10-31" max="2017-10-31" type="date" name="date">
+</p>
+</center>
+<p>
+<center><h2><i> 
+Цена до ($) 
+</i> 
+</h2> 
+</center> 
+</p> 
+<p> 
+<center> 
+<input type="range" min="10" max="1000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">500</span> 
+</center> 
+</p> 
+<datalist id="rangeList"> 
+<input type="range" min="10" max="1000" step="10" value="50"> 
+</datalist> 
+  <form>
+  <p>
+  <center>
+      <input type="button" value=" Найти ">
+    </center>
+    </p>
+ </form>
+  </div>
+  <div id="content0">
+  <center> <i><h2>
+  <p><ins>Экскурсии</ins></p>
+  </h2></i></center>
+
+  <i><p>1.Информация о первой экскурсии.</p></i>
+
+  <p align=right><table border=0 width=100%>
+  <tr>
+  <td><p align=center><img src="bus_image.jpg" width=80%></p></td>
+  <td><p align=center> <img src="bus_image.jpg" width=80%></p></td>
+  <td><p align=center> <img src="bus_image.jpg" width=80%></p></td>
+  </tr>
+    <tr>
+  <td><p align=center>Название</p></td>
+  <td><p align=center> Название</p></td>
+  <td><p align=center>Название</p></td>
+  </tr>
+  </table>
+
+  <i><p>2.Информация о второй экскурсии.</p></i>
+  <p align=right><table border=0 width=100%>
+  <tr>
+  <td><p align=center><img src="bus_image.jpg" width=80%></p></td>
+  <td><p align=center> <img src="bus_image.jpg" width=80%></p></td>
+  <td><p align=center> <img src="bus_image.jpg" width=80%></p></td>
+  </tr>
+    <tr>
+  <td><p align=center>Название</p></td>
+  <td><p align=center> Название</p></td>
+  <td><p align=center>Название</p></td>
+  </tr>
+  </table>
+
+  <i><p>3.Информация о третьей экскурсии.</p></i>
+  <p align=right><table border=0 width=100%>
+  <tr>
+  <td><p align=center><img src="bus_image.jpg" width=80%></p></td>
+  <td><p align=center> <img src="bus_image.jpg" width=80%></p></td>
+  <td><p align=center> <img src="bus_image.jpg" width=80%></p></td>
+  </tr>
+  <tr>
+  <td><p align=center>Название</p></td>
+  <td><p align=center> Название</p></td>
+  <td><p align=center>Название</p></td>
+  </tr>
+  </table>
+  <table border=0 width=100%>
+   <tr>
+  <td> 
+  <form>
+  <p>
+  <center>
+      <a href="transport.html" ><input type="button" value="3 шаг (Выбор транспорта) " ></a>
+    </center>
+    </p>
+  </form>
+  </td>
+  <td> 
+  <form>
+  <p>
+  <center>
+     <a href="main page.html"> <input type="button" value="На главную "></a>
+    </center>
+    </p>
+  </form>
+  </td>
+  <td> 
+  </td>
+  </tr>
+ </table>
+ </p>   
+ </div>
+ <div id="footer">
+  <hr>
+ <div style="position:absolute; left:45%">
+  ©2016MMF2group
+  </div>
+  <div style="position:absolute; left:60% ">
+  <img src="vk-logo.png" width=21% hight=21%>
+   </div>
+   <div style="position:absolute; left:63% ">
+  <img src="facebook-logo.png" width=6% hight=6%>
+   </div>
+  </div>
+   </body>
+</html>
